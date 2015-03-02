@@ -1,0 +1,14 @@
+---
+nav: prices
+description: I’m a web designer with a love for gorgeous typography, delicious interaction, and attention to detail.
+side_image: left
+priority: 1.0
+---
+
+<h2>Prices</h2>
+
+<p>Here are a few of our prices however patients will be given a full treatment plan with pricing when they attend. If you have any questions please contact the surgery and we will be happy to help.</p>
+
+<% data.prices.prices.each do |price| %>
+  <p><span class="paragraph--accent"><%= price.name %></span> <%= price.price %></p>
+<% end %>
