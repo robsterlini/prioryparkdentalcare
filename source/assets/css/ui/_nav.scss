@@ -1,0 +1,19 @@
+/**
+ * Nav Scss Partial
+ */
+
+.nav {
+  margin-top: rem(25);
+  text-align: left;
+}
+.nav__list {
+  margin: 0 auto;
+  padding: 0 rem(5);
+}
+.nav__item {
+  display: inline-block;
+}
+[class^="nav__link--"] {
+  display: block;
+  padding: rem(10) rem(20);
+}
