@@ -20,10 +20,9 @@
 $color-white: #f9f9f9;
 $color-black: #1b1b1b;
 
-$color-dark:  #222;
-
-$color-accent: #999;
-$color-accent-mono: #999;
+$color-dark:  #00283b;
+$color-mid:   #003150;
+$color-light: #0070b7;
 
 $color-alert-1: #d31b1b;
 $color-alert-2: #d3541b;
@@ -35,20 +34,16 @@ $color-success: #178d14;
 	Elements
 ========================================== */
 
-$color-background:$color-white;
+$color-background: $color-white;
 $color-text: #333;
 
 /* ==|== Colors =================
    Links
 ====================================== */
 
-$color-link-primary: #1484b8;
-$color-link-primary-hover: darken(#0e6791,5%);
+$color-link-primary: $color-light;
+$color-link-primary-hover: lighten($color-light, 5%);
 $color-link-primary-active: $color-black;
-
-$color-link-reverse: lighten($color-link-primary,23%);
-$color-link-reverse-hover: lighten($color-link-primary,40%);
-$color-link-reverse-active: $color-white;
 
 /* ==|== Colors =================
 	Social
