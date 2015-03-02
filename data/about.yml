@@ -1,0 +1,29 @@
+########
+
+staff:
+
+  dentists:
+
+    - name: "Leo Pascoulis"
+      qualification: "BDS Dental Surgery (London)"
+      extras: "BSc Pysiology (London); MSc Pharmacology"
+      gdc: "61881"
+
+    - name: "Nicola Boden"
+      qualification: "BDS Dental Surgery (London)"
+      gdc: "65085"
+
+  nurses:
+
+    - name: "Drew Hadjisavva"
+      gdc: "113758"
+
+services:
+  - "General dentistry"
+  - "Cosmetic dentistry"
+  - "Preventative care"
+  - "Teeth whitening"
+  - "Dentures"
+  - "Hygiene treatments"
+  - "Oral cancer checks"
+  - "Children's dental care"

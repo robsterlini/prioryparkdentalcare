@@ -12,5 +12,18 @@ masthead:
 ##
 
     -   slug: "about-us"
+        icon: "about"
         label: "About us"
         alt: "The people behind Priory Park Dentalcare"
+
+##
+
+    -   slug: "prices"
+        label: "Prices"
+        alt: "A quick-look price list for treatments"
+
+##
+
+    -   slug: "news"
+        label: "News"
+        alt: "A feed of news about the surgery"
