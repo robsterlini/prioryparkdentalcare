@@ -1,5 +1,11 @@
-<header class="masthead" data-js="toggled-navigation-parent">
+<header class="masthead">
   <h1>Priory Park Dentalcare</h1>
+  <p><%= data.contact.phone %></p>
+  <p>
+    <% data.contact.address.each do |text| %>
+      <span><%= text %></span>
+    <% end %>
+  </p>
   <nav class="nav">
     <ul class="nav__list">
       <!--<% data.pages.masthead.each do |nav| %>
@@ -10,3 +16,4 @@
       <% end %>-->
     </ul>
   </nav>
+</header>
