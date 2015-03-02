@@ -12,7 +12,6 @@ g.partials = [
   'navToggle',
   'codeHighlight',
   'parallax',
-  'anchorScroll',
   'loadHero',
   'hotspurRelated'
 ];
