@@ -1,11 +1,28 @@
 ---
 title: About us
-nav: home
+nav: about
 description: I’m a web designer with a love for gorgeous typography, delicious interaction, and attention to detail.
-hero: main.jpg
+side_image: right
 priority: 1.0
 ---
 
-
-<section class="">
-</section>
+<h2>Practice Dentists</h2>
+<% data.about.staff.dentists.each do |role| %>
+  <h3><%= role.name %><span class="visuallyhidden"> &ndash; </span><span class="about-us__qualification paragraph--accent"><%= role.qualification %></span></h3>
+  <% if role.extras %>
+    <p class="about-us__extras">Other qualifications &ndash; <%= role.extras %></p>
+  <% end %>
+  <% if role.gdc %>
+    <p><span class="sc">GDC</span> number &ndash; <%= role.gdc %></p>
+  <% end %>
+<% end %>
+<h2>Qualified Dental Nurse</h2>
+<% data.about.staff.nurses.each do |role| %>
+  <h3><%= role.name %><span class="visuallyhidden"> &ndash; </span><span class="about-us__qualification"><%= role.qualification %></span></h3>
+  <% if role.extras %>
+    <p class="about-us__extras">Other qualifications &ndash; <%= role.extras %></p>
+  <% end %>
+  <% if role.gdc %>
+    <p><span class="sc">GDC</span> number &ndash; <%= role.gdc %></p>
+  <% end %>
+<% end %>
