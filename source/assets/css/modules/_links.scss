@@ -20,13 +20,4 @@ a {
 	&:active {
 		color:$color-link-primary-active;
 	}
-	.hero & {
-		color: $color-link-reverse;
-		@include hover {
-			color:$color-link-reverse-hover;
-		}
-		@include active {
-			color:$color-link-reverse-active;
-		}
-	}
 }
