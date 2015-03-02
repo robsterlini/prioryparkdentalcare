@@ -29,6 +29,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 h1,
 h2,
 h3 {
+	color: $color-dark;
 	font-family: $font-stack-header;
 	font-weight: $font-weight-bold;
 }
@@ -51,7 +52,7 @@ h1 {
 
 h2 {
 	@include font-size(32);
-	line-height:1.35;
+	line-height:1.45;
 	margin:0 auto rem(12);
 	padding-top:rem(48);
 	@include respond-to($bp-small) {
@@ -63,31 +64,15 @@ h2 {
 }
 
 h3 {
-	@include font-feature-settings(smcp c2sc);
 	@include font-size(25);
 	margin:rem(24) auto rem(16);
-	line-height:1.05;
+	line-height:1.45;
 	@include respond-to($bp-small) {
 		@include font-size(22);
 	}
 	@include respond-to($bp-tiny) {
 		@include font-size(19);
 	}
-}
-
-h4 {
-	@include font-size(30);
-	margin:em(8, 30) auto em(16, 30);
-}
-
-h5 {
-	@include font-size(24);
-	margin:em(12, 24) auto em(12, 24);
-}
-
-h6 {
-	@include font-size(20);
-	margin:em(10, 20) auto em(10, 20);
 }
 
 /* ==|== Typography =================
@@ -117,4 +102,18 @@ abbr[title] {
 	border:0;
 	background:url(../images/underlines/underline-dotted.svg) repeat-x center 88%;
 	background-size:rem(2) rem(1);
+}
+
+.paragraph--accent {
+	color: $color-dark;
+	display: block;
+	font-family: $font-stack-header;
+	font-weight: bold;
+	@include font-size(20);
+  @include respond-to($bp-small) {
+    @include font-size(18);
+  }
+  @include respond-to($bp-tiny) {
+    @include font-size(16);
+  }
 }
