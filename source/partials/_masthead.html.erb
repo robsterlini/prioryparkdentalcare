@@ -1,5 +1,5 @@
 <header class="masthead">
-  <h1>Priory Park Dentalcare</h1>
+  <h1><a href="/">Priory Park Dentalcare</a><% if current_page.data.title %><span class="visuallyhidden"> <%= current_page.data.title %></span><% end %></h1>
   <p><%= data.contact.phone %></p>
   <p>
     <% data.contact.address.each do |text| %>
