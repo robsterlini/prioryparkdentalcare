@@ -4,6 +4,7 @@
 
 .masthead {
   background: $color-mid;
+  background: linear-gradient(left top, lighten($color-mid, 5%), $color-mid);
   color: $color-white;
   padding: rem(50) 0 0;
   text-align: center;
