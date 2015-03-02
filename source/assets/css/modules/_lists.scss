@@ -45,3 +45,29 @@ ol {
     }
   }
 }
+
+/* ==|== Lists =================
+  Accent
+========================================== */
+
+.list--accent {
+  border: 0 solid $color-pale;
+  border-width: rem(4) 0;
+  color: $color-dark;
+  font-family: $font-stack-header;
+  padding: rem(10) 0;
+  margin: rem(25) auto;
+  max-width: rem($layout-max-width - 100);
+  @include font-size(22);
+  @include respond-to($bp-small) {
+    @include font-size(20);
+  }
+  @include respond-to($bp-tiny) {
+    @include font-size(18);
+  }
+  li {
+    display: inline-block;
+    line-height: 1.45;
+    width: 50%;
+  }
+}
