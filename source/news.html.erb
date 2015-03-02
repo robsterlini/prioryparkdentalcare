@@ -1,0 +1,12 @@
+---
+nav: news
+description: I’m a web designer with a love for gorgeous typography, delicious interaction, and attention to detail.
+priority: 1.0
+---
+
+<% data.news.news.each do |news| %>
+  <h3><%= news.date %></h3>
+  <% news.copy.each do |text| %>
+    <%= text %>
+  <% end %>
+<% end %>
