@@ -33,14 +33,13 @@ ol {
 ========================================== */
 
 .list--inline {
-  // text-align: center;
   max-width: $layout-max-width-suffix;
   padding: 0;
   li {
     display: inline;
     & + li {
       &:before {
-        color: $color-accent;
+        color: $color-mid;
         content:' • ';
       }
     }
