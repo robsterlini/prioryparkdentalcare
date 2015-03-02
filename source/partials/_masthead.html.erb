@@ -1,12 +1,14 @@
 <header class="masthead">
-  <h1 class="masthead__header"><a href="/">Priory Park Dentalcare</a><% if current_page.data.title %><span class="visuallyhidden"> <%= current_page.data.title %></span><% end %></h1><!--
-  --><div class="masthead__contact">
-    <p><%= data.contact.phone %></p>
-    <p>
-      <% data.contact.address.each do |text| %>
-        <span><%= text %></span>
-      <% end %>
-    </p>
+  <div class="group">
+    <h1 class="masthead__header"><a href="/">Priory Park Dentalcare</a><% if current_page.data.title %><span class="visuallyhidden"> <%= current_page.data.title %></span><% end %></h1><!--
+    --><div class="masthead__contact">
+      <p><%= data.contact.phone %></p>
+      <p>
+        <% data.contact.address.each do |text| %>
+          <span><%= text %></span>
+        <% end %>
+      </p>
+    </div>
   </div>
   <nav class="nav">
     <ul class="nav__list">
