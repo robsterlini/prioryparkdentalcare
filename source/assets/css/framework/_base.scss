@@ -49,12 +49,12 @@ body {
 }
 
 ::selection {
-	background:$color-black;
+	background:$color-light;
 	text-shadow:none;
 	color:$color-white;
 }
 ::-moz-selection {
-	background:$color-black;
+	background:$color-light;
 	text-shadow:none;
 	color:$color-white;
 }
