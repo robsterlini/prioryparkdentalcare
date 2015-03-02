@@ -19,29 +19,4 @@
 }
 
 main {
-  background:$color-white;
-  overflow: hidden;
-  position: relative;
-  z-index:1;
-  padding-bottom:em(50);
-  padding-left:rem(150);
-  // @include animation('%fade-in',.5s);
-  @include respond-to($bp-small) {
-    padding-left:rem(60);
-  }
-  @include respond-to($bp-tiny) {
-    padding-left:0;
-    padding-bottom:rem(5);
-  }
-}
-
-hr {
-  margin: rem(60) auto rem(40);
-  max-width: rem($layout-max-width /2);
-  outline: none;
-  border: 0;
-  border-top: rem(2) lighten($color-accent, 30%) solid;
-  p + & {
-    margin-top: rem(60);
-  }
 }
