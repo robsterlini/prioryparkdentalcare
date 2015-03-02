@@ -18,11 +18,16 @@
 .masthead__header {
   @extend %masthead__col;
   margin: 0 auto;
-  width: rem(800);
+  max-width: none;
+  text-indent: rem(-2);
+  width: calc(100% - #{rem(300)});
+  a {
+    color: $color-white;
+  }
 }
 .masthead__contact {
   @extend %masthead__col;
-  width: rem(200);
+  width: rem(300);
   p {
     & + p {
       margin-bottom: rem(5);
