@@ -36,7 +36,9 @@
     <!--[if lt IE 8]>
       <p>This site has been built to function best in modern browsers, read more about upgrading you browser <a href="http://browsehappy.com/" title="Find out how to upgrade your browser" rel="nofollow">here</a>.</p>
     <![endif]-->
-    <%= yield %>
+    <main id="content" class="wrapper">
+        <%= yield %>
+    </main>
     <%= partial "partials/footer" %>
     <%= partial "partials/scripts" %>
   </body>
