@@ -5,5 +5,26 @@
 .masthead {
   background: $color-mid;
   color: $color-white;
+  padding: rem(50) 0 0;
+  text-align: center;
   text-shadow: rgba($color-dark, 0.25) rem(1) rem(1) rem(3);
+}
+%masthead__col {
+  display: inline-block;
+  text-align: left;
+  vertical-align: bottom;
+}
+.masthead__header {
+  @extend %masthead__col;
+  margin: 0 auto;
+  width: rem(800);
+}
+.masthead__contact {
+  @extend %masthead__col;
+  width: rem(200);
+  p {
+    & + p {
+      margin-bottom: rem(5);
+    }
+  }
 }
