@@ -19,4 +19,9 @@ a {
 	@include active {
 		color:$color-link-primary-active;
 	}
+	.masthead & {
+		@include active {
+			color: $color-white;
+		}
+	}
 }
