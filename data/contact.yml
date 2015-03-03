@@ -7,4 +7,5 @@ address:
     -   "118<span class='sc'>A</span> Old London Road,"
     -   "St&nbsp;Albans,"
     -   "Herts,"
-email: "prioryparkdentalcare@gmail.com"    -   "<span class='sc'>AL</span>1&nbsp;1<span class='sc'>PU</span>"
+email: "prioryparkdentalcare@gmail.com"
+email_split: "prioryparkdentalcare<span class='contact__email'>@gmail.com</span>"
