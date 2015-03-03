@@ -1,3 +1,19 @@
 /**
  * Footer Scss Partial
  */
+
+.footer {
+  background: $color-pale;
+  padding: rem(32) 0;
+  p,
+  ul {
+    @include font-size(16);
+    margin-bottom: rem(6);
+    @include respond-to($bp-small) {
+      @include font-size(15);
+    }
+    @include respond-to($bp-tiny) {
+      @include font-size(14);
+    }
+  }
+}
