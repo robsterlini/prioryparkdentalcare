@@ -65,7 +65,7 @@ h2 {
 
 h3 {
 	@include font-size(25);
-	margin:rem(24) auto rem(16);
+	margin:rem(24) auto rem(8);
 	line-height:1.45;
 	@include respond-to($bp-small) {
 		@include font-size(22);
