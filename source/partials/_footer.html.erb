@@ -1,10 +1,11 @@
 <footer class="footer">
   <div class="group">
-    <p><%= data.contact.phone %></p>
     <p>
-      <% data.contact.address.each do |text| %>
-        <span><%= text %></span>
-      <% end %>
+      <a href="tel:<%= data.contact.phone.number %>" title="Call the surgery"><%= data.contact.phone.label %></a> • <a href="/contact" title="Find us">
+        <% data.contact.address.each do |text| %>
+          <span><%= text %></span>
+        <% end %>
+      </a>
     </p>
     <ul class="list--inline">
       <!--<% data.pages.masthead.each do |nav| %>
