@@ -25,6 +25,7 @@ main {
 }
 
 .col--one {
+  flex: 1;
   h2 {
     &:first-of-type {
       padding-top: 0;
