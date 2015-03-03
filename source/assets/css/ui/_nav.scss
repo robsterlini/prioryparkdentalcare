@@ -15,6 +15,7 @@
 }
 .nav__item {
   display: inline-block;
+  vertical-align: bottom;
 }
 [class^="nav__link--"] {
   display: block;
