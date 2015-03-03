@@ -10,5 +10,5 @@ priority: 1.0
 <p>Here are a few of our prices however patients will be given a full treatment plan with pricing when they attend. If you have any questions please contact the surgery and we will be happy to help.</p>
 
 <% data.prices.prices.each do |price| %>
-  <p><span class="paragraph--accent"><%= price.name %></span> <%= price.price %></p>
+  <p><span class="paragraph--accent"><%= price.name %></span> <span class="lnum"><%= price.price %></span></p>
 <% end %>
