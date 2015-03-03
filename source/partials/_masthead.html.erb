@@ -14,8 +14,8 @@
     <ul class="nav__list">
       <!--<% data.pages.masthead.each do |nav| %>
         --><li class="nav__item">
-          <% label = nav.abbr ? "<abbr class='nav__label' title='#{nav.abbr.title}'>#{nav.abbr.label}</abbr>" : "<span class='nav__label'>#{nav.label}</span>" %>
-          <a title="<%= nav.alt %>" class="nav__link--<%= nav.icon || nav.slug %> ss-nav-<%= nav.icon || nav.slug %>" href="/<%= nav.slug %>"><%= label %></a>
+          <% link = nav.icon || nav.slug; %>
+          <a title="<%= nav.alt %>" class="nav__link--<%= link %><% if current_page.data.nav == link %> nav__link--selected<% end %>" href="/<%= nav.slug %>"><%= nav.label %></a>
         </li><!--
       <% end %>-->
     </ul>
