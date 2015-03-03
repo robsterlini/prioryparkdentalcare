@@ -40,7 +40,12 @@
         <section class="col--one">
             <%= yield %>
         </section><!--
-        --><section class="col--two" style="background-image: url(/assets/images/bg/side-<%= current_page.data.nav %>.jpg);">
+            <% if current_page.data.nav == 'contact' %>
+                --><section class="col--two col--contact">
+                    <iframe class="contact__map" frameborder="0" scrolling="no" border-radius="10px" marginheight="0" marginwidth="0" src="<%= data.contact.address_link %>&amp;output=embed"></iframe>
+            <% else %>
+                --><section class="col--two" style="background-image: url(/assets/images/bg/side-<%= current_page.data.nav %>.jpg);">
+            <% end %>
         </section>
     </main>
     <%= partial "partials/footer" %>
