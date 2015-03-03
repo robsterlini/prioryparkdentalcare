@@ -27,3 +27,15 @@ masthead:
     -   slug: "news"
         label: "News"
         alt: "A feed of news about the surgery"
+
+##
+
+    -   slug: "contact"
+        label: "Contact us"
+        alt: "Get in touch with the surgery"
+
+##
+
+    -   slug: "links"
+        label: "Links"
+        alt: "View some of important, related links"
