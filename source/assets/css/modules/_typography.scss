@@ -95,7 +95,11 @@ p {
 
 .small-caps,
 .sc {
-	@include font-feature-settings(smcp c2sc);
+	@include font-feature-settings(liga kern smcp c2sc);
+}
+
+.lnum {
+  @include font-feature-settings(liga kern lnum);
 }
 
 abbr[title] {
