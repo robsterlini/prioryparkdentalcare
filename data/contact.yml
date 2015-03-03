@@ -1,11 +1,10 @@
 ########
 
 phone:
-  label: "01727 812800"
+  label: "01727&nbsp;812800"
   number: "+441727812800"
 address:
-    -   "118A Old London Road,"
-    -   "St Albans,"
+    -   "118<span class='sc'>A</span> Old London Road,"
+    -   "St&nbsp;Albans,"
     -   "Herts,"
-    -   "AL1 1PU"
-email: "prioryparkdentalcare@gmail.com"
+email: "prioryparkdentalcare@gmail.com"    -   "<span class='sc'>AL</span>1&nbsp;1<span class='sc'>PU</span>"
