@@ -28,3 +28,21 @@
     color: $color-white;
   }
 }
+.nav__link--selected {
+  color: $color-white;
+  overflow: hidden;
+  position: relative;
+  &:before {
+    background: $color-white;
+    bottom: rem(-18);
+    content: '';
+    height: rem(20);
+    left: calc(50% - #{rem(10)});
+    position: absolute;
+    transform: rotate(45deg);
+    width: rem(20);
+  }
+  @include hover {
+    color: $color-white;
+  }
+}
