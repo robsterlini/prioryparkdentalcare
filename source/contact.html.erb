@@ -1,6 +1,37 @@
 ---
-title: About us
-nav: about
+title: Contact us
+nav: contact
 description: I’m a web designer with a love for gorgeous typography, delicious interaction, and attention to detail.
 priority: 1.0
 ---
+
+<div class="contact__columns">
+  <div class="contact__column">
+    <h3><%= partial("partials/svg/_icon", :locals => { :icon_id => "sign_post", :icon_size => "24" }) %>Address</h3>
+    <p>
+      <% data.contact.address.each do |text| %>
+        <span class="contact__address"><%= text %></span>
+      <% end %>
+    </p>
+    <div class="btns--left">
+      <a href="<%= data.contact.address_link %>" title="See where the surgery is on Google Maps" class="btn--small">View on Google Maps</a>
+    </div>
+  </div><!--
+  --><div class="contact__column">
+    <h3><%= partial("partials/svg/_icon", :locals => { :icon_id => "phone", :icon_size => "24" }) %>Telephone</h3>
+    <p><a href="tel:<%= data.contact.phone.number %>" title="Call the surgery"><%= data.contact.phone.label %></a></p>
+    <h3><%= partial("partials/svg/_icon", :locals => { :icon_id => "email", :icon_size => "24" }) %>Email</h3>
+    <p><a href="mailto:<%= data.contact.email %>" title="Email the surgery"><%= data.contact.email_split %></a></p>
+  </div>
+</div>
+
+<h3>When to contact us</h3>
+
+<p>If you would like to comment or wish to complain about our service please feel free to <a href="mailto:<%= data.contact.email %>" title="Email the surgery">email us</a>. Mr Leo Pascoulis will respond promptly. Full details of our complaints procedure can be found here.</p>
+
+<p>New patients contact us on this email if you need further information.</p>
+
+<p>Existing patients please do not use this email address to book, cancel or change appointments as we will not receive this information in time. Instead phone the surgery during opening hours.</p>
+
+<h3>In case of emergency</h3>
+<p>In case of emergency outside surgery opening hours, please telephone the surgery number and follow the instructions on the recorded message.</p>
