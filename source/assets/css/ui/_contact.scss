@@ -1,0 +1,86 @@
+/**
+ * Contact page-specific Scss Partial
+ */
+
+.contact__columns {
+  @extend %list--accent;
+  margin-top: 0;
+  h3 {
+    &:first-child {
+      margin-top: rem(8);
+    }
+  }
+}
+
+.contact__column {
+  display: inline-block;
+  width: calc(50% - #{rem(16)});
+  vertical-align: top;
+  & + & {
+    margin-left: rem(32);
+  }
+}
+
+.contact__address {
+  white-space: nowrap;
+}
+
+.contact__map {
+  height: 100%;
+  left: rem(20);
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: calc(100% - #{rem(20)});
+}
+
+.contact__email {
+  display: inline-block;
+}
+
+@include respond-to($bp-mid) {
+  .contact__column {
+    width: 100%;
+    & + & {
+      margin-left: 0;
+    }
+  }
+}
+@include respond-to($bp-small) {
+  body.contact {
+    main {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+  .col--contact {
+    display: block;
+    width: 100%;
+  }
+  .contact__column {
+    width: calc(50% - #{rem(16)});
+    & + & {
+      margin-left: rem(32);
+    }
+  }
+  .contact__map {
+    height: rem(350);
+    left: 0;
+    position: relative;
+    width: 100%;
+  }
+}
+@include respond-to($bp-tiny) {
+  .contact__column {
+    width: 100%;
+    & + & {
+      margin-left: 0;
+    }
+  }
+  .contact__map {
+    height: rem(250);
+    left: 0;
+    position: relative;
+    width: 100%;
+  }
+}
