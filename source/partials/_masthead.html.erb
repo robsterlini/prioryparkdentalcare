@@ -2,12 +2,11 @@
   <div class="group">
     <h1 class="masthead__header"><a href="/">Priory Park Dentalcare</a><% if current_page.data.title %><span class="visuallyhidden"> <%= current_page.data.title %></span><% end %></h1><!--
     --><div class="masthead__contact">
-      <p><a href="tel:<%= data.contact.phone.number %>" title="Call the surgery"><%= data.contact.phone.label %></a></p>
+      <p><a class="link--has-icon" href="tel:<%= data.contact.phone.number %>" title="Call the surgery"><%= partial("partials/svg/_icon", :locals => { :icon_id => "phone", :icon_size => "16" }) %><%= data.contact.phone.label %></a></p>
       <p>
-        <a href="/contact" title="Find us">
-          <% data.contact.address.each do |text| %>
-            <span><%= text %></span>
-          <% end %>
+        <a class="link--has-icon" href="/contact" title="Find us">
+          <%= partial("partials/svg/_icon", :locals => { :icon_id => "sign_post", :icon_size => "16" }) %><!--
+          --><% data.contact.address.each do |text| %><span><%= text %></span> <% end %>
         </a>
       </p>
     </div>
