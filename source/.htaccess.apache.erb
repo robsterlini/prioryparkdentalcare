@@ -1,17 +1,12 @@
 # REMOVE WWW
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-RewriteRule ^(.*)$ http://%1%{REQUEST_URI} [R=301,QSA,NC,L]
+RewriteCond %{HTTP_HOST} !^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://www.%1%{REQUEST_URI} [R=301,QSA,NC,L]
 
 # MOVE PERMANENTLY
 <% data.htaccess.redirect.each do |old, new| %>
 Redirect 301 <%= old %> <%= data.htaccess.web.url %><%= new %>
 <% end %>
-
-# SSL REDIRECT
-RewriteEngine On
-RewriteCond %{HTTPS} !=on
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # REMOVE index.html
 RewriteCond %{THE_REQUEST} /index\.html? [NC]
