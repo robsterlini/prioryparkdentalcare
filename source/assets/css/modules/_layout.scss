@@ -53,3 +53,11 @@ main {
     width: rem(100);
   }
 }
+@include respond-to($bp-small) {
+  main {
+    padding: rem(30) 0;
+  }
+  .col--two {
+    display: none;
+  }
+}

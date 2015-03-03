@@ -29,4 +29,31 @@
   width: rem(280);
 }
 
+@include respond-to($bp-small) {
+  .footer {
+    .group {
+      padding-right: rem(210);
+    }
+  }
+  .footer__logo--bda {
+    top: rem(-15);
+    width: rem(210);
+  }
+}
+
+@include respond-to($bp-tiny + 100) {
+  .footer {
+    padding-bottom: rem(5);
+    .group {
+      padding-right: 0;
+    }
+  }
+  .footer__logo--bda {
+    left: rem(-17);
+    max-width: rem(210);
+    position: relative;
+    right: auto;
+    top: 0;
+    width: 100%;
+  }
 }

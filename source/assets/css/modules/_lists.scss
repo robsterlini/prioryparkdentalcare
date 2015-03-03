@@ -75,3 +75,24 @@ ol {
     width: 50%;
   }
 }
+@include respond-to($bp-mid) {
+  .list--accent {
+    li {
+      width: 100%;
+    }
+  }
+}
+@include respond-to($bp-small) {
+  .list--accent {
+    li {
+      width: 50%;
+    }
+  }
+}
+@include respond-to($bp-tiny) {
+  .list--accent {
+    li {
+      width: 100%;
+    }
+  }
+}

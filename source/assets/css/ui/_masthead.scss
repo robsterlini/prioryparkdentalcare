@@ -34,3 +34,31 @@
     }
   }
 }
+
+@include respond-to($bp-small) {
+  .masthead {
+    padding-top: rem(20);
+  }
+  .masthead__header {
+    // max-width: $layout-max-width-suffix;
+    width: 100%;
+  }
+  .masthead__contact {
+    margin-top: rem(15);
+    width: 100%;
+    p {
+      display: inline-block;
+      margin-right: rem(12);
+      vertical-align: top;
+      & + p {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@include respond-to($bp-tiny) {
+  .masthead__contact {
+    display: none;
+  }
+}
