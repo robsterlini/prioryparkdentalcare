@@ -30,6 +30,11 @@ main {
       padding-top: 0;
     }
   }
+  h3 {
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
 }
 .col--two {
   background: 30% center no-repeat;
