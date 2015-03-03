@@ -6,7 +6,10 @@
  * Including SCSS Partial. Keeps screen.scss neater.
  */
 
+// Global UI
+@import "_footer";
 @import "_masthead";
 @import "_nav";
 
+// Page UI
 @import "_about";
