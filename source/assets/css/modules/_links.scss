@@ -13,11 +13,10 @@ a {
 	color:$color-link-primary;
 	transition:color .25s cubic-bezier(#{$bezier-nice});
 	text-decoration: none;
-	&:hover,
-	&:focus {
+	@include hover {
 		color:$color-link-primary-hover;
 	}
-	&:active {
+	@include active {
 		color:$color-link-primary-active;
 	}
 }
