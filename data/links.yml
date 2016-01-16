@@ -1,0 +1,39 @@
+########
+
+links:
+
+  - title: "British Dental Association Smile <span class='sc'>(BDA)</span>"
+    link:
+      text: "bdasmile.org"
+      title: "Find out about the British Dental Association"
+      link: "http://www.bdasmile.org/"
+
+  - title: "<span class='sc'>BDA</span> 3D Mouth"
+    link:
+      text: "3dmouth.org"
+      title: "Find out about the BDA’s 3D mouth"
+      link: "http://www.3dmouth.org/"
+
+  - title: "British Dental Health Foundation <span class='sc'>BDHF</span>"
+    link:
+      text: "dentalhealth.org"
+      title: "Find out about the British Dental Health Foundation"
+      link: "http://www.dentalhealth.org/"
+
+  - title: "General Dental Council <span class='sc'>GDC</span>"
+    link:
+      text: "gdc-uk.org"
+      title: "Find out about the General Dental Council"
+      link: "http://www.gdc-uk.org/Pages/default.aspx"
+
+  # - title: "<span class='sc'>GDC</span> Guidance Standards For Professionals"
+  #   link:
+  #     text: "gdc-uk.org/dentalprofessionals/standards"
+  #     title: "Read about the GDC’s Guidance Standards For Professionals"
+  #     link: "http://www.gdc-uk.org/Dentalprofessionals/Standards/Pages/default.aspx"
+
+  - title: "Care Quality Commission"
+    link:
+      text: "cqd.org.uk"
+      title: "Find out about the Care Quality Commission"
+      link: "http://www.cqc.org.uk/"

@@ -1,0 +1,18 @@
+########
+
+prices:
+
+  - name: "Examination"
+    price: "&pound;60"
+
+  - name: "X-Rays"
+    price: "&pound;15 each"
+
+  - name: "Scale &amp; polish only"
+    price: "&pound;65"
+
+  - name: "Single surface white filling"
+    price: "from &pound;95 to &pound;140"
+
+  - name: "Extractions per tooth"
+    price: "from &pound;150 to &pound;200"

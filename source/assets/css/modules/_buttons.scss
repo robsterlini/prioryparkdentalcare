@@ -1,0 +1,63 @@
+/**
+ * Button SCSS Partial
+ *
+ * @requires framework/_type.scss, framework/_color.scss
+ */
+
+/* ==|== Buttons =================
+	Containers
+========================================== */
+.btns {
+
+}
+.btns--center {
+	text-align: center;
+}
+.btns--left {
+	.btn,
+	.btn--small {
+		margin-left: 0;
+		margin-right: rem(20);
+	}
+}
+
+/* ==|== Buttons =================
+	Buttons
+========================================== */
+%btn {
+	@extend %paragraph;
+	border: rem(2) solid $color-link-primary;
+	border-radius: rem(3);
+	display: inline-block;
+	line-height: 1.3;
+	margin: rem(5) rem(10) rem(5);
+	padding: rem(10) rem(15);
+	text-decoration: none;
+	transition: all .25s cubic-bezier(#{$bezier-nice});
+	width:auto;
+	@include active {
+		transform: scale(0.95,0.95);
+	}
+}
+.btn,
+.btn--small {
+	@extend %btn;
+	background:$color-link-primary;
+	color:$color-white;
+	text-shadow: none;
+	@include hover {
+		background:$color-link-primary-hover;
+		border-color:$color-link-primary-hover;
+		color:$color-white;
+	}
+}
+.btn--small {
+	padding: rem(5) rem(10);
+}
+.btn--outline {
+	@extend %btn;
+	@include hover {
+		color:$color-link-primary-hover;
+		border-color:$color-link-primary-hover;
+	}
+}

@@ -1,0 +1,12 @@
+---
+nav: news
+description: Find out the latest news from the surgery.
+priority: 0.75
+---
+
+<% data.news.news.each do |news| %>
+  <h3><%= news.date %></h3>
+  <% news.copy.each do |text| %>
+    <%= text %>
+  <% end %>
+<% end %>

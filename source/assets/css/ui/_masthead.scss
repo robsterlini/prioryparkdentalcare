@@ -1,0 +1,66 @@
+/**
+ * Masthead Scss Partial
+ */
+
+.masthead {
+  background: $color-mid;
+  background: linear-gradient(to bottom right, lighten($color-mid, 5%), darken($color-mid, 2%));
+  color: $color-white;
+  padding: rem(50) 0 0;
+  text-align: center;
+  text-shadow: rgba($color-dark, 0.25) rem(1) rem(1) rem(3);
+}
+%masthead__col {
+  display: inline-block;
+  text-align: left;
+  vertical-align: bottom;
+}
+.masthead__header {
+  @extend %masthead__col;
+  margin: 0 auto;
+  max-width: none;
+  text-indent: rem(-2);
+  width: calc(100% - #{rem(320)});
+  padding-right: rem(20);
+  a {
+    color: $color-white;
+  }
+}
+.masthead__contact {
+  @extend %masthead__col;
+  width: rem(300);
+  p {
+    & + p {
+      margin-bottom: rem(5);
+    }
+  }
+}
+
+@include respond-to($bp-small) {
+  .masthead {
+    padding-top: rem(20);
+  }
+  .masthead__header {
+    // max-width: $layout-max-width-suffix;
+    padding-right: 0;
+    width: 100%;
+  }
+  .masthead__contact {
+    margin-top: rem(15);
+    width: 100%;
+    p {
+      display: inline-block;
+      margin-right: rem(12);
+      vertical-align: top;
+      & + p {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@include respond-to($bp-tiny) {
+  .masthead__contact {
+    display: none;
+  }
+}

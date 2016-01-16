@@ -1,0 +1,20 @@
+########
+
+news:
+
+  - date: "26 Aug 2012"
+    copy:
+      - "<p>The Priory Park Dentalcare website has undergone a minor renovation with the help of <a href='http://robsterlini.co.uk'>Rob&nbsp;Sterlini</a>.</p>"
+      - "<p>It was further refreshed in early March 2015, to be more suitable for mobile users, and fully-accessible.</p>"
+
+  - date: "23 Dec 2010"
+    copy:
+      - "<p>We are delighted to inform you that Priory Park Dentalcare has been awarded membership to the British Dental Association Good Practice Scheme.</p>"
+
+  - date: "3 Dec 2010"
+    copy:
+      - "<p>The Priory Park Dentalcare website is now completed.</p>"
+
+  - date: "12 Oct 2010"
+    copy:
+      - "<p>The Priory Park Dentalcare website is now up and running but still in progress.</p>"

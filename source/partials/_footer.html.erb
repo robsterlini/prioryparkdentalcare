@@ -1,0 +1,26 @@
+<footer class="footer">
+  <div class="group">
+    <p>
+      <a href="tel:<%= data.contact.phone.number %>" title="Call the surgery"><%= data.contact.phone.label %></a> • <a href="/contact" title="Find us">
+        <% data.contact.address.each do |text| %>
+          <span><%= text %></span>
+        <% end %>
+      </a>
+    </p>
+    <ul class="list--inline">
+      <!--<% data.pages.masthead.each do |nav| %>
+        --><li>
+          <a title="<%= nav.alt %>" href="/<%= nav.slug %>"><%= nav.label %></a>
+        </li><!--
+      <% end %>-->
+    </ul>
+    <p>Designed and built by <a href="https://robsterlini.co.uk">Rob Sterlini</a>.</p>
+    <p>&copy; 2013&ndash;<span data-js="footer-date">present</span> • Site last updated <%= data.about.updated %></p>
+    <%= image_tag 'logos/bda-member@2x.png', :title => 'Priory Park Dentalcare is a BDA Good Practice Member', :class => 'footer__logo--bda' %>
+  </div>
+
+  <% # TYPEKIT %>
+  <script src="//use.typekit.net/fvz1wrh.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+</footer>
+<%= partial("partials/svg/_icon_defs") %>

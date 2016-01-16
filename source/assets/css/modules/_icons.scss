@@ -1,0 +1,42 @@
+/**
+ * Icons SCSS Partial
+ */
+
+
+/* ==|== Icons =================
+	Generic
+========================================== */
+
+[class^="icon--"] {
+	fill: inherit;
+	position: relative;
+	vertical-align: middle;
+	path {
+		fill: inherit;
+	}
+}
+
+.icon--16 {
+	height: rem(16);
+	margin-right: rem(4);
+	top: rem(-1);
+	width: rem(16);
+}
+.icon--24 {
+	height: rem(24);
+	margin-right: rem(6);
+	top: rem(-2);
+	width: rem(24);
+}
+.icon--32 {
+	height: rem(32);
+	margin-right: rem(8);
+	top: rem(-2);
+	width: rem(32);
+}
+
+.link--has-icon {
+	display: block;
+	padding-left: rem(20);
+	text-indent: rem(-20);
+}

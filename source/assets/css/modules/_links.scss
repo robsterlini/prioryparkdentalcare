@@ -1,0 +1,37 @@
+/**
+ * Links SCSS Partial
+ *
+ * @requires framework/_colors.scss
+ */
+
+
+/* ==|== Links =================
+	Primary
+========================================== */
+
+a {
+	color: $color-link-primary;
+	fill: $color-link-primary;
+	transition:color .25s cubic-bezier(#{$bezier-nice}), fill .25s cubic-bezier(#{$bezier-nice});
+	text-decoration: none;
+	@include hover {
+		color:$color-link-primary-hover;
+		fill: $color-link-primary-hover;
+	}
+	@include active {
+		color: $color-link-primary-active;
+		fill: $color-link-primary-active;
+	}
+	.masthead & {
+		color: $color-link-reversed;
+		fill: $color-link-reversed;
+		@include hover {
+		color:$color-link-reversed-hover;
+		fill: $color-link-reversed-hover;
+	}
+		@include active {
+			color: $color-link-reversed-active;
+			fill: $color-link-reversed-active;
+		}
+	}
+}

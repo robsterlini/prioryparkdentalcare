@@ -1,0 +1,123 @@
+/**
+ * Typography SCSS Partial
+ *
+ * @requires framework/_type.scss
+ */
+
+/* ==|== Typography =================
+	Load Typefaces from type.scss
+========================================== */
+
+/**
+ * Loads in the CSS font-face declarations based on a Sass list of fonts and their styles
+ * Set the number of fonts that you want to load in in $fonts-total
+ * Set the fonts themselves and make sure they're in the assets/fonts folder
+ * Set the styles for the fonts, if Font-number-1 is a regular weight put normal,
+ * if Font-number-2 is an italic weight put italic etc
+**/
+
+
+/* ==|== Typography =================
+	1. Headings
+========================================== */
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+	@include font-feature-settings(liga kern onum);
+	max-width:$layout-max-width-suffix;
+}
+
+h1,
+h2,
+h3 {
+	color: $color-dark;
+	font-family: $font-stack-header;
+	font-weight: $font-weight-bold;
+}
+h1 {
+	@include font-size(52);
+	line-height:1.15;
+	margin:rem(72) auto rem(24);
+  @include respond-to($bp-small) {
+    @include font-size(42);
+    // margin-top: rem(64);
+  }
+  @include respond-to($bp-tiny) {
+    @include font-size(34);
+    // margin-top: rem(48);
+  }
+  & + h2 {
+  	padding-top: rem(28);
+  }
+}
+
+h2 {
+	@include font-size(32);
+	line-height:1.45;
+	margin:0 auto rem(12);
+	padding-top:rem(48);
+	@include respond-to($bp-small) {
+		@include font-size(28);
+	}
+	@include respond-to($bp-tiny) {
+		@include font-size(24);
+	}
+}
+
+h3 {
+	@include font-size(25);
+	margin:rem(24) auto rem(8);
+	line-height:1.45;
+	@include respond-to($bp-small) {
+		@include font-size(22);
+	}
+	@include respond-to($bp-tiny) {
+		@include font-size(19);
+	}
+}
+
+/* ==|== Typography =================
+	Paragraphs
+========================================== */
+%paragraph {
+	@include font-size(18);
+	line-height:1.45;
+	margin:rem(6) auto rem(12);
+	@include respond-to($bp-small) {
+		@include font-size(17);
+	}
+	@include respond-to($bp-tiny) {
+		@include font-size(16);
+	}
+}
+p {
+	@extend %paragraph;
+}
+
+.small-caps,
+.sc {
+	@include font-feature-settings(liga kern smcp c2sc);
+}
+
+.lnum {
+  @include font-feature-settings(liga kern lnum);
+}
+
+abbr[title] {
+	border:0;
+	background:url(../images/underlines/underline-dotted.svg) repeat-x center 88%;
+	background-size:rem(2) rem(1);
+}
+
+.paragraph--accent {
+	color: $color-dark;
+	display: block;
+	font-family: $font-stack-header;
+	font-weight: bold;
+	@include font-size(20);
+  @include respond-to($bp-small) {
+    @include font-size(18);
+  }
+  @include respond-to($bp-tiny) {
+    @include font-size(16);
+  }
+}

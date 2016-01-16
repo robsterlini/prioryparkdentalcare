@@ -1,0 +1,41 @@
+########
+
+masthead:
+
+##
+
+    -   slug: ""
+        icon: "home"
+        label: "Home"
+        alt: "Priory Park Dentalcare"
+
+##
+
+    -   slug: "about-us"
+        icon: "about"
+        label: "About us"
+        alt: "The people behind Priory Park Dentalcare"
+
+##
+
+    -   slug: "prices"
+        label: "Prices"
+        alt: "A quick-look price list for treatments"
+
+##
+
+    -   slug: "news"
+        label: "News"
+        alt: "A feed of news about the surgery"
+
+##
+
+    -   slug: "contact"
+        label: "Contact us"
+        alt: "Get in touch with the surgery"
+
+##
+
+    -   slug: "links"
+        label: "Links"
+        alt: "View some of important, related links"

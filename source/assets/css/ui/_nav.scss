@@ -1,0 +1,71 @@
+/**
+ * Nav Scss Partial
+ */
+
+.nav {
+  background: rgba($color-dark, 0.3);
+  margin-top: rem(25);
+  text-align: left;
+}
+.nav__list {
+  margin: 0 auto;
+  max-width: rem($layout-max-width-wide + 40);
+  padding: 0;
+  width: 100%;
+}
+.nav__item {
+  display: inline-block;
+  vertical-align: bottom;
+}
+[class^="nav__link--"] {
+  color: $color-link-reversed;
+  display: block;
+  padding: rem(12) rem(20);
+  transition: color .25s cubic-bezier(#{$bezier-nice}), background-color .25s cubic-bezier(#{$bezier-nice});
+  @include hover {
+    background: $color-dark;
+    color: $color-link-reversed-hover;
+  }
+  @include active {
+    color: $color-link-reversed-active;
+  }
+}
+.nav__link--selected {
+  color: $color-white;
+  overflow: hidden;
+  position: relative;
+  &:before {
+    background: $color-white;
+    bottom: rem(-18);
+    content: '';
+    height: rem(20);
+    left: calc(50% - #{rem(10)});
+    position: absolute;
+    transform: rotate(45deg);
+    width: rem(20);
+  }
+  @include hover {
+    color: $color-white;
+  }
+}
+@include respond-to($bp-small) {
+  .nav {
+    margin-top: rem(20);
+  }
+  .nav__list {
+    width: 95%;
+  }
+  [class^="nav__link--"] {
+    padding: rem(12);
+  }
+  .nav__link--selected {
+    &:before {
+      display: none;
+    }
+  }
+}
+@include respond-to($bp-tiny) {
+  .nav__list {
+    width: 100%;
+  }
+}

@@ -1,0 +1,63 @@
+/**
+ * Layout SCSS Partial
+ *
+ * @requires framework/_type.scss
+ */
+
+.group,
+.wrapper {
+	margin:0 auto;
+	max-width:$layout-max-width-wide-suffix;
+	width:93.75%;
+
+}
+
+.wrapper {
+  display: flex;
+  flex:1;
+  overflow: hidden;
+}
+
+main {
+  overflow: hidden;
+  padding: rem(60) 0;
+}
+
+.col--one {
+  flex: 1;
+  h2 {
+    &:first-of-type {
+      padding-top: 0;
+    }
+  }
+  h3 {
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+}
+.col--two {
+  background: 30% center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  width: rem(350);
+  &:before {
+    background: $color-white;
+    content: '';
+    height: 120%;
+    left: rem(-50);
+    position: absolute;
+    top: -10%;
+    transform: rotate(5deg);
+    width: rem(100);
+  }
+}
+@include respond-to($bp-small) {
+  main {
+    padding: rem(30) 0;
+  }
+  .col--two {
+    display: none;
+  }
+}

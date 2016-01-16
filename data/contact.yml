@@ -1,0 +1,13 @@
+########
+
+phone:
+  label: "01727&nbsp;812800"
+  number: "+441727812800"
+address:
+    -   "118<span class='sc'>A</span> Old London Road,"
+    -   "St&nbsp;Albans,"
+    -   "Herts,"
+    -   "<span class='sc'>AL</span>1&nbsp;1<span class='sc'>PU</span>"
+address_link: "https://maps.google.co.uk/maps?f=q&source=embed&hl=en&geocode=&q=Priory+Park+Dental+Care,+Old+London+Road,+St.+Albans&aq=0&oq=Priory+Park+Denta&sll=51.747253,-0.332229&sspn=0.007347,0.01472&g=AL1+1PU&ie=UTF8&hq=Priory+Park+Dental+Care,&hnear=Old+London+Road+Pre-School,+St+Albans,+Hertfordshire+AL1+1SE,+United+Kingdom&t=m&ll=51.745581,-0.333015&spn=0.01658,0.038418"
+email: "prioryparkdentalcare@gmail.com"
+email_split: "prioryparkdentalcare<span class='contact__email'>@gmail.com</span>"

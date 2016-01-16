@@ -1,0 +1,27 @@
+---
+title: About us
+nav: about
+description: Find out about the team at the surgery.
+priority: 0.9
+---
+
+<h2>Practice Dentists</h2>
+<% data.about.staff.dentists.each do |role| %>
+  <h3><%= role.name %><span class="visuallyhidden"> &ndash; </span><span class="about-us__qualification paragraph--accent"><%= role.qualification %></span></h3>
+  <% if role.extras %>
+    <p class="about-us__extras">Other qualifications &ndash; <%= role.extras %></p>
+  <% end %>
+  <% if role.gdc %>
+    <p><span class="sc">GDC</span> number &ndash; <span class="lnum"><%= role.gdc %></span></p>
+  <% end %>
+<% end %>
+<h2>Qualified Dental Nurse</h2>
+<% data.about.staff.nurses.each do |role| %>
+  <h3><%= role.name %><span class="visuallyhidden"> &ndash; </span><span class="about-us__qualification"><%= role.qualification %></span></h3>
+  <% if role.extras %>
+    <p class="about-us__extras">Other qualifications &ndash; <%= role.extras %></p>
+  <% end %>
+  <% if role.gdc %>
+    <p><span class="sc">GDC</span> number &ndash; <span class="lnum"><%= role.gdc %></span></p>
+  <% end %>
+<% end %>
