@@ -46,6 +46,10 @@ $color-link-primary: $color-light;
 $color-link-primary-hover: lighten($color-light, 5%);
 $color-link-primary-active: $color-black;
 
+$color-link-reversed: lighten($color-light, 10%);
+$color-link-reversed-hover: lighten($color-light, 20%);
+$color-link-reversed-active: $color-white;
+
 /* ==|== Colors =================
 	Social
 ========================================== */

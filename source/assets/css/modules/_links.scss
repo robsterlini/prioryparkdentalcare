@@ -10,7 +10,7 @@
 ========================================== */
 
 a {
-	color:$color-link-primary;
+	color: $color-link-primary;
 	fill: $color-link-primary;
 	transition:color .25s cubic-bezier(#{$bezier-nice}), fill .25s cubic-bezier(#{$bezier-nice});
 	text-decoration: none;
@@ -23,9 +23,15 @@ a {
 		fill: $color-link-primary-active;
 	}
 	.masthead & {
+		color: $color-link-reversed;
+		fill: $color-link-reversed;
+		@include hover {
+		color:$color-link-reversed-hover;
+		fill: $color-link-reversed-hover;
+	}
 		@include active {
-			color: $color-white;
-			fill: $color-white;
+			color: $color-link-reversed-active;
+			fill: $color-link-reversed-active;
 		}
 	}
 }

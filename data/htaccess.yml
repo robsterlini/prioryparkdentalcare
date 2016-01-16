@@ -1,9 +1,7 @@
 web:
     domain: prioryparkdentalcare.co.uk
     url: http://www.prioryparkdentalcare.co.uk
-    journal: /journal
-    case_study: /case-study
-
+    
 redirect:
     /home: /
 

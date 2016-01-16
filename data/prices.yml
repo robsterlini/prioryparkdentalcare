@@ -6,7 +6,7 @@ prices:
     price: "&pound;60"
 
   - name: "X-Rays"
-    price: "&pound;10 each"
+    price: "&pound;15 each"
 
   - name: "Scale &amp; polish only"
     price: "&pound;65"

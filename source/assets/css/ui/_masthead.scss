@@ -21,6 +21,7 @@
   max-width: none;
   text-indent: rem(-2);
   width: calc(100% - #{rem(320)});
+  padding-right: rem(20);
   a {
     color: $color-white;
   }
@@ -41,6 +42,7 @@
   }
   .masthead__header {
     // max-width: $layout-max-width-suffix;
+    padding-right: 0;
     width: 100%;
   }
   .masthead__contact {
