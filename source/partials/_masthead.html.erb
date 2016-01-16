@@ -16,7 +16,7 @@
       <!--<% data.pages.masthead.each do |nav| %>
         --><li class="nav__item">
           <% link = nav.icon || nav.slug; %>
-          <a title="<%= nav.alt %>" class="nav__link--<%= link %><% if current_page.data.nav == link %> nav__link--selected<% end %>" href="/<%= nav.slug %>"><%= nav.label %></a>
+          <a title="<%= nav.alt %>" class="nav__link--<%= link %><% if current_page.data.nav == link %> nav__link--selected<% end %>" href="/<%= nav.slug %><% if nav.slug != "" %>/<% end %>"><%= nav.label %></a>
         </li><!--
       <% end %>-->
     </ul>

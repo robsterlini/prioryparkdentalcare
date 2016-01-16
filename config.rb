@@ -77,7 +77,7 @@ activate :search_engine_sitemap
 
 # disable layout
 page ".htaccess.apache", :layout => false
-page "redirects/.htaccess.apache", :layout => false
+# page "redirects/.htaccess.apache", :layout => false
 page "feed.xml", :layout => false
 
 # rename file after build
@@ -100,7 +100,7 @@ configure :build do
   # activate :asset_hash
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
