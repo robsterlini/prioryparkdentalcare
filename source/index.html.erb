@@ -5,6 +5,10 @@ side_image: left
 priority: 1.0
 ---
 
+<%
+  content_for(:title_suffix, data.contact.address_short)
+%>
+
 <p>Priory Park Dentalcare is a Private Dental Clinic which offers the very best quality dental care in a relaxed and friendly environment. The practice is well established and we are proud of the service that we offer our patients.</p>
 <ul class="list--accent"><!--
   <% data.about.services.each do |offer| %>

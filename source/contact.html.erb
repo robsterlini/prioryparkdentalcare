@@ -1,9 +1,13 @@
 ---
 title: Contact us
 nav: contact
-description: Get in touch with the surgery.
+description: 
 priority: 1.0
 ---
+
+<%
+  content_for(:meta_description, "Get in touch with the surgery, or find us at #{data.contact.address_short}")
+%>
 
 <div class="contact__columns">
   <div class="contact__column">
