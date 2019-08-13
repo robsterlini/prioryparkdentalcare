@@ -3,13 +3,13 @@
 prices:
 
   - name: "Examination"
-    price: "from &pound;70"
+    price: "from &pound;75"
 
   - name: "X-Rays"
-    price: "&pound;15 each"
+    price: "&pound;20 each"
 
   - name: "Scale &amp; polish only"
-    price: "from &pound;70"
+    price: "from &pound;75"
 
   - name: "Single surface white filling"
     price: "from &pound;100 to &pound;150"
