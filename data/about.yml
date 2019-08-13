@@ -6,7 +6,7 @@ staff:
 
     - name: "Leo Pascoulis"
       qualification: "BDS Dental Surgery (London)"
-      extras: "BSc Pysiology (London); MSc Pharmacology"
+      extras: "BSc Physiology (London); MSc Pharmacology"
       gdc: "61881"
 
     - name: "Nicola Boden"
@@ -32,4 +32,4 @@ services:
 
 ########
 
-updated: "September 2017"
+updated: "June 2019"

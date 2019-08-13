@@ -2,17 +2,17 @@
 
 links:
 
-  - title: "British Dental Association Smile <span class='sc'>(BDA)</span>"
-    link:
-      text: "bdasmile.org"
-      title: "Find out about the British Dental Association"
-      link: "http://www.bdasmile.org/"
+  # - title: "British Dental Association Smile <span class='sc'>(BDA)</span>"
+  #   link:
+  #     text: "bdasmile.org"
+  #     title: "Find out about the British Dental Association"
+  #     link: "http://www.bdasmile.org/"
 
-  - title: "<span class='sc'>BDA</span> 3D Mouth"
-    link:
-      text: "3dmouth.org"
-      title: "Find out about the BDA’s 3D mouth"
-      link: "http://www.3dmouth.org/"
+  # - title: "<span class='sc'>BDA</span> 3D Mouth"
+  #   link:
+  #     text: "3dmouth.org"
+  #     title: "Find out about the BDA’s 3D mouth"
+  #     link: "http://www.3dmouth.org/"
 
   - title: "British Dental Health Foundation <span class='sc'>BDHF</span>"
     link:
